@@ -4,3 +4,7 @@
     --fontsize: 2rem;
 }
 
+body {
+    margin-inline: var(--padding);
+}
+
