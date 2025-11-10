@@ -1,10 +1,10 @@
-#root {
+:root {
     --bg-color: tomato;
     --padding: 2rem;
     --fontsize: 2rem;
 }
 
 body {
-    margin-inline: var(--padding);
+    margin: var(--padding);
 }
 
