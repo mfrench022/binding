@@ -20,6 +20,8 @@ h1, h2, h3, h4 {
     color: var(--fg-color);
 }
 
+
+/* drop shadow css obtained from https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/drop-shadow */
 h1, h2, h3 {
     filter: drop-shadow(0rem 0rem 0.09rem var(--accent-color));
 }
