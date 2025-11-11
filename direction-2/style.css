@@ -4,7 +4,7 @@
 :root {
 	--bg-color: black;
     --fg-color: white;
-    --accent-color: yellow;
+    --accent-color: rgb(255, 255, 71);
 	--padding: 1.5rem;
 	--fontsize: 1rem;
 	font-size: 100%;
@@ -17,7 +17,7 @@ body {
 h1, h2, h3, h4 {
     font-family: "Playfair Display", serif;
     font-weight: 550;
-    color: var(--bg-color);
+    color: var(--fg-color);
 }
 
 h1, h2, h3 {
