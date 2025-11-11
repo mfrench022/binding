@@ -71,7 +71,7 @@ p {
 
 .date {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 h4 {
@@ -114,4 +114,18 @@ img {
     object-fit: cover;
     z-index: -100;
     mix-blend-mode: lighten;
+}
+
+footer {
+    display: flex;
+    background-color: var(--fg-color);
+    padding-block: var(--padding);
+    justify-content: space-between;
+}
+
+footer p {
+    color: var(--bg-color);
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 550;
 }
