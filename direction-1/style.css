@@ -1,0 +1,11 @@
+img {
+    position: fixed;
+    object-fit: cover;
+    mix-blend-mode: screen;
+    width: 100%;
+}
+
+body{
+    color: white;
+    background-color: black;
+}
