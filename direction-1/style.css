@@ -79,9 +79,19 @@ h3 time {
 
 blockquote {
     text-align: center;
-    padding-block-start: calc(2 * var(--padding));
+    margin-block-start: calc(2 * var(--padding));
     padding-inline: calc(var(--padding) / 2);
+    background-color: white;
+    mix-blend-mode: color-dodge;
 }
+
+blockquote p {
+    color: black;
+    mix-blend-mode: normal;
+    padding-block-end: 0;
+    padding-block: calc( 2 * var(--padding));
+}
+
 
 footer {
     background-color: white;
