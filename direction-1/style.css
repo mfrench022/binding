@@ -77,6 +77,7 @@ h3 time {
     font-style: italic;
 }
 
+
 blockquote {
     text-align: center;
     margin-block-start: calc(2 * var(--padding));
