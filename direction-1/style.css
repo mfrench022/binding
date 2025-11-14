@@ -87,5 +87,16 @@ h3 time {
 
 blockquote {
     text-align: center;
+    padding-block-start: calc(2 * var(--padding));
+    padding-inline: calc(var(--padding) / 2);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-block-start: var(--padding);
+    margin-block-start: calc( 2* var(--padding));
+    display: flex;
+    column-gap: calc(var(--padding) * 3);
 }
 
