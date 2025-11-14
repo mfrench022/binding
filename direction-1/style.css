@@ -92,11 +92,13 @@ blockquote {
 }
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding-block-start: var(--padding);
     margin-block-start: calc( 2* var(--padding));
     display: flex;
     column-gap: calc(var(--padding) * 3);
+    mix-blend-mode: color-dodge;
+    font-weight: 900;
 }
 
