@@ -3,33 +3,33 @@
 
 :root {
 	--bg-color: black;
-    --fg-color: white;
-    --accent-color: rgb(255, 255, 71);
+	--fg-color: white;
+	--accent-color: rgb(255, 255, 71);
 	--padding: 1.5rem;
 	--fontsize: 1rem;
 	font-size: 100%;
 }
 
 body {
-    background-color: var(--bg-color);
+	background-color: var(--bg-color);
 }
 
 h1, h2, h3, h4 {
-    font-family: "Playfair Display", serif;
-    font-weight: 550;
-    color: var(--fg-color);
+	font-family: "Playfair Display", serif;
+	font-weight: 550;
+	color: var(--fg-color);
 }
 
 
 /* drop shadow css obtained from https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/drop-shadow */
 h1, h2, h3 {
-    filter: drop-shadow(0rem 0rem 0.09rem var(--accent-color));
+	filter: drop-shadow(0rem 0rem 0.09rem var(--accent-color));
 }
 
 h3 {
 	padding-block-end: calc(2 * var(--padding));
 	margin: var(--padding);
-    font-size: calc(1.25 * var(--fontsize));
+	font-size: calc(1.25 * var(--fontsize));
 }
 
 h1 {
@@ -42,8 +42,8 @@ h1 {
 p {
 	padding-block-end: calc(1 * var(--padding));
 	margin: var(--padding);
-    font-family: "Montserrat", sans-serif;
-    color: var(--fg-color);
+	font-family: "Montserrat", sans-serif;
+	color: var(--fg-color);
 }
 
 section {
@@ -54,8 +54,8 @@ h4 {
 	padding-block: var(--padding);
 	margin-block-end: calc(2 * var(--padding));
 	padding-inline: var(--padding);
-    font-size: calc(1.5 * var(--fontsize));
-    background-color: var(--bg-color);
+	font-size: calc(1.5 * var(--fontsize));
+	background-color: var(--bg-color);
 }
 
 h1 {
@@ -68,66 +68,82 @@ time p {
 
 p {
 	font-size: calc(var(--fontsize) / 1.18);
-    line-height: calc(var(--fontsize) / 1);
+	line-height: calc(var(--fontsize) / 1);
 }
 
 .date {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 h4 {
-    position: sticky;
-    inset-block-start: 0;
-    line-height: 1.65rem;
-    background-color: var(--bg-color);
-    padding-inline-end: 4rem;
-    color: var(--fg-color);
-    /* background-color: blue; */
+	position: sticky;
+	inset-block-start: 0;
+	line-height: 1.65rem;
+	background-color: var(--bg-color);
+	padding-inline-end: 4rem;
+	color: var(--fg-color);
+	/* background-color: blue; */
 }
 
 section {
-    border-block-start: 2px dotted var(--accent-color);
-    /* background-color: green; */
+	border-block-start: 2px dotted var(--accent-color);
+	/* background-color: green; */
 }
 
 .back {
-    aspect-ratio: 1;
-    position: fixed;
-    z-index: 100;
-    inset-block-start: calc(var(--padding) / 1.45);
-    inset-inline-end: var(--padding);
-    font-size: calc(2 * var(--fontsize));
-    padding: 0;
-    color: var(--fg-color);
-    filter: drop-shadow(0rem 0rem 0.06rem var(--bg-color));
-    /* background-color: white; */
+	aspect-ratio: 1;
+	position: fixed;
+	z-index: 100;
+	inset-block-start: calc(var(--padding) / 1.45);
+	inset-inline-end: var(--padding);
+	font-size: calc(2 * var(--fontsize));
+	padding: 0;
+	color: var(--fg-color);
+	filter: drop-shadow(0rem 0rem 0.06rem var(--bg-color));
+	/* background-color: white; */
 }
 
 header {
-    width: 100%;
-    position: relative;
-    /* background-color: blue; */
+	width: 100%;
+	position: relative;
+	/* background-color: blue; */
 }
 
 img {
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
-    z-index: -100;
-    mix-blend-mode: lighten;
+	position: absolute;
+	width: 100%;
+	object-fit: cover;
+	z-index: -100;
+	mix-blend-mode: lighten;
 }
 
 footer {
-    display: flex;
-    background-color: var(--fg-color);
-    padding-block: var(--padding);
-    justify-content: space-between;
+	display: flex;
+	background-color: var(--fg-color);
+	padding-block: var(--padding);
+	justify-content: space-between;
 }
 
 footer p {
-    color: var(--bg-color);
-    padding: 0;
-    font-family: "Playfair Display", serif;
-    font-weight: 350;
+	color: var(--bg-color);
+	padding: 0;
+	font-family: "Playfair Display", serif;
+	font-weight: 350;
+}
+
+h4 {
+  animation: weight 2s linear infinite alternate;
+}
+
+/* Looked up how to animate font weight here: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-variation-settings */
+@keyframes weight {
+	0% {
+	font-weight: 100;
+	font-variation-settings: "wght" 100; /* smooth on variable fonts */
+}
+	100% {
+	font-weight: 900;
+	font-variation-settings: "wght" 900;
+}
 }
