@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
-	--bg-color: white;
+	--bg-color: rgb(237, 236, 232);
 	--fg-color: black;
     --padding: 1.5rem;
 	--fontsize: 1rem;
 	font-size: 100%;
+}
+
+body {
+    background-color: rgb(237, 236, 232);
 }
 
 
@@ -24,7 +28,7 @@ h3 {
 
 h4 {
     background-color: black;
-    color: white;
+    color: rgb(237, 236, 232);
     padding-block: calc(var(--padding) / 2);
     position: sticky;
     top: calc(var(--padding) * 6.5);
@@ -69,13 +73,14 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
 }
 
 footer {
     display: flex;
     background-color: black;
-    color: white;
+    color: rgb(237, 236, 232);
 }
 
 footer p {
