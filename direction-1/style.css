@@ -122,3 +122,7 @@ inset-block-start: var(--padding);
     opacity: 40%;
 }
 
+.typeset2 {
+    background-color: blue;
+}
+
