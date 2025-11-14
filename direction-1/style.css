@@ -43,16 +43,20 @@ h1, h2, h3, h4, p {
 }
 
 h1 {
-    padding-block-start: calc(4 * var(--padding));
+    padding-block-start: 0;
     font-size: 7vw;
     color: rgb(255, 255, 255);
-    mix-blend-mode: color-dodge;
 }
 
-h1, h2, h3, h4, blockquote p, time p {
+h1, h2, h3, h4, blockquote p, time {
 font-family: "Libre Caslon Text", serif;
 font-weight: 700;
 font-style: normal;
+mix-blend-mode: color-dodge;
+}
+
+h4, blockquote p, time p {
+    font-size: 1.25rem;
 }
 
 p {
@@ -69,6 +73,19 @@ font-family: "Hanken Grotesk", sans-serif;
 .typeset {
     transform: scaleX(-1);
     text-align: right;
-    padding-block-start: 0;
-    padding-block-end: calc(2 * var(--padding));
+    padding-block-start: calc(3 * var(--padding));
 }
+
+h3 {
+    padding-block-start: calc(3 * var(--padding));
+    font-style: italic;
+}
+
+h3 time {
+    font-style: italic;
+}
+
+blockquote {
+    text-align: center;
+}
+
