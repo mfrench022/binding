@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
 	--bg-color: black;
 	--fg-color: white;
@@ -13,6 +16,7 @@ img {
     mix-blend-mode: screen;
     height: 100vh;
     width: 100%;
+    z-index: 200;
 }
 
 body{
@@ -36,11 +40,28 @@ body{
 }
 
 h1, h2, h3, h4, p {
-    padding-inline: var(--padding);
+    padding-inline: calc(var(--padding) / 2);
 }
 
 h1 {
-    padding-block-start: var(--padding);
+    padding-block-start: calc(4 * var(--padding));
+    font-size: 7vw;
+    color: rgb(255, 255, 255);
+}
+
+h1, h2, h3, h4, blockquote p, time p {
+font-family: "Libre Caslon Text", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+p {
+font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.85rem;
+  padding-block-end: var(--padding);
 }
 
 
