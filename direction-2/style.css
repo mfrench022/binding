@@ -29,12 +29,13 @@ h1, h2, h3 {
 h3 {
 	padding-block-end: calc(2 * var(--padding));
 	margin: var(--padding);
+	margin-inline: calc(var(--padding) /2);
 	font-size: calc(1.25 * var(--fontsize));
 }
 
 h1 {
   margin-block-end: var(--padding);  
-  margin-inline: var(--padding);  
+  margin-inline: calc(var(--padding) /2);
   padding-block-start: var(--padding);  
   line-height: 3rem;
 }
@@ -42,6 +43,7 @@ h1 {
 p {
 	padding-block-end: calc(1 * var(--padding));
 	margin: var(--padding);
+	margin-inline: calc(var(--padding) /2);
 	font-family: "Montserrat", sans-serif;
 	color: var(--fg-color);
 }
@@ -50,10 +52,14 @@ section {
 	margin-block-start: calc(3 * var(--padding));
 }
 
+article > section:first-of-type {
+  margin-block-start: 0;
+}
+
 h4 {
 	padding-block: var(--padding);
 	margin-block-end: calc(2 * var(--padding));
-	padding-inline: var(--padding);
+	padding-inline: calc(var(--padding) /2);
 	font-size: calc(1.5 * var(--fontsize));
 	background-color: var(--bg-color);
 }
@@ -68,7 +74,7 @@ time p {
 
 p {
 	font-size: calc(var(--fontsize) / 1.18);
-	line-height: calc(var(--fontsize) / 1);
+	line-height: calc(var(--fontsize) / 0.8);
 }
 
 .date {
@@ -96,7 +102,7 @@ section {
 	position: fixed;
 	z-index: 100;
 	inset-block-start: calc(var(--padding) / 1.45);
-	inset-inline-end: var(--padding);
+	inset-inline-end: calc(var(--padding) /2);
 	font-size: calc(2 * var(--fontsize));
 	padding: 0;
 	color: var(--fg-color);
