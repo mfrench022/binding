@@ -68,14 +68,6 @@ font-family: "Hanken Grotesk", sans-serif;
   padding-block-end: var(--padding);
 }
 
-
-/* learned inversion technique in this thread: https://stackoverflow.com/questions/3433641/flipping-inverting-mirroring-text-using-css-only */
-.typeset {
-    transform: scaleX(-1);
-    text-align: right;
-    padding-block-start: calc(3 * var(--padding));
-}
-
 h3 {
     padding-block-start: calc(3 * var(--padding));
     font-style: italic;
@@ -100,5 +92,23 @@ footer {
     column-gap: calc(var(--padding) * 3);
     mix-blend-mode: color-dodge;
     font-weight: 900;
+}
+
+section > p:first-of-type {
+padding-block-start: var(--padding);
+}
+
+h4 {
+position: sticky;
+inset-block-start: var(--padding);
+}
+
+/* learned inversion technique in this thread: https://stackoverflow.com/questions/3433641/flipping-inverting-mirroring-text-using-css-only */
+.typeset {
+    position: static;
+     transform: scaleX(-1);
+    text-align: right;
+    padding-block-start: calc(3 * var(--padding));
+    opacity: 40%;
 }
 
