@@ -1,11 +1,53 @@
+:root {
+	--bg-color: black;
+	--fg-color: white;
+	--accent-color: rgb(255, 255, 71);
+	--padding: 1.5rem;
+	--fontsize: 1rem;
+	font-size: 100%;
+}
+
 img {
     position: fixed;
     object-fit: cover;
     mix-blend-mode: screen;
+    height: 100vh;
     width: 100%;
 }
 
 body{
     color: white;
     background-color: black;
+}
+
+
+
+.back {
+	aspect-ratio: 1;
+	position: fixed;
+	z-index: 100;
+	inset-block-start: calc(var(--padding) / 1.45);
+	inset-inline-end: var(--padding);
+	font-size: calc(2 * var(--fontsize));
+	padding: 0;
+	color: var(--fg-color);
+	filter: drop-shadow(0rem 0rem 0.06rem var(--bg-color));
+	/* background-color: white; */
+}
+
+h1, h2, h3, h4, p {
+    padding-inline: var(--padding);
+}
+
+h1 {
+    padding-block-start: var(--padding);
+}
+
+
+/* learned inversion technique in this thread: https://stackoverflow.com/questions/3433641/flipping-inverting-mirroring-text-using-css-only */
+.typeset {
+    transform: scaleX(-1);
+    text-align: right;
+    padding-block-start: 0;
+    padding-block-end: calc(2 * var(--padding));
 }
