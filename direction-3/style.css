@@ -1,32 +1,45 @@
 :root {
-	--bg-color: black;
-	--fg-color: white;
+	--bg-color: white;
+	--fg-color: black;
     --padding: 1.5rem;
 	--fontsize: 1rem;
 	font-size: 100%;
 }
 
+
+
 h1, h2, h3, h4 {
-	font-family: "Playfair Display", serif;
 	font-weight: 550;
 }
 
-.back {
-	aspect-ratio: 1;
-	position: fixed;
-	z-index: 100;
-	inset-block-start: calc(var(--padding) / 1.45);
-	inset-inline-end: var(--padding);
-	font-size: calc(2 * var(--fontsize));
-	padding: 0;
-	color: var(--fg-color);
-	filter: drop-shadow(0rem 0rem 0.06rem var(--bg-color));
-	/* background-color: white; */
+.gridelement {
+    border-width:1rem;
+    border-color: black;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 2.8rem;
+    background-color: var(--bg-color);
+    border-radius: 0.3rem;
 }
 
 .grid {
+    margin-block-start: var(--padding);
     display: flex;
-    border-width: 1rem;
-    border-color: black;
+    flex-wrap: wrap;
+    position: fixed;
+    justify-content: start;
+    column-gap: calc(var(--padding) / 19);
+    row-gap: calc(var(--padding) / 19);
+}
+
+.date {
+    padding-block-start: calc(10 * var(--padding));
+}
+
+p, h3, h4 {
+    padding-inline: 1rem;
 }
 
