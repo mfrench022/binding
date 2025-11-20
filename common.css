@@ -78,6 +78,9 @@ blockquote {
 	background-color: var(--fg-color);
 	mix-blend-mode: color-dodge;
 	margin-block-end: calc(4 * var(--padding));
+	border-block-start-width: calc(var(--padding) / 2);
+	border-block-start-color: var(--accent-color);
+	border-block-start-style: solid;
 }
 
 blockquote p {
