@@ -21,21 +21,6 @@ body{
     background-position: center;
 }
 
-
-
-.back {
-	aspect-ratio: 1;
-	position: fixed;
-	z-index: 101;
-	inset-block-start: calc(var(--padding) / 5);
-	inset-inline-start: calc(var(--padding) / 2);
-	font-size: calc(2 * var(--fontsize));
-	padding: 0;
-	color: var(--fg-color);
-	filter: drop-shadow(0.3rem 0.1rem 0.05rem #000000);
-	/* background-color: white; */
-}
-
 h1, h2, h3, h4, p {
     padding-inline: calc(var(--padding) / 2);
 }
@@ -90,7 +75,7 @@ blockquote {
     padding-inline: calc(var(--padding) / 2);
     background-color: var(--fg-color);
     mix-blend-mode: color-dodge;
-    margin-block-end: calc(10 * var(--padding));
+    margin-block-end: calc(4 * var(--padding));
 }
 
 blockquote p {
@@ -110,6 +95,25 @@ footer {
     display: flex;
     column-gap: calc(var(--padding) * 3);
     font-weight: 900;
+}
+
+.top {
+    width: 100%;
+    height: calc(2 * var(--padding));
+    position: fixed;
+    z-index: 101;
+    inset-block-start: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: calc(var(--padding) /2);
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+}
+
+.back {
+	font-size: calc(2 * var(--fontsize));
+	color: var(--fg-color);
+	/* background-color: white; */
 }
 
 section > p:first-of-type {
@@ -150,7 +154,7 @@ flex-wrap: wrap;
 /* drop shadow css obtained from https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/drop-shadow */
 .sticky {
 position: sticky;
-inset-block-start: 0;
+inset-block-start: calc(1.6 * var(--padding));
 filter: drop-shadow(0.3rem 0.1rem 0.05rem #000000);
 background: #000000;
 background: linear-gradient(180deg,rgba(0, 0, 0, 1) 71%, rgba(0, 0, 0, 0) 100%);
@@ -169,6 +173,13 @@ z-index: 100;
 
 .line2 {
     margin-block-start: 0;
+}
+
+.line3 {
+    width: 100%;
+    height: calc(var(--padding) / 2);
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 0) 100%);
 }
 
 .main .typeset2 {
