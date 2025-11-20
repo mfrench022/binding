@@ -5,34 +5,34 @@
 	--bg-color: black;
 	--fg-color: white;
 	--accent-color: blue;
+    --grey: rgb(59, 58, 58);
 	--padding: 1.5rem;
 	--fontsize: 1rem;
 	font-size: 120%;
 }
 
-img {
-    position: fixed;
-    object-fit: cover;
-    height: 100vh;
-    width: 100%;
-    z-index: -10;
+body{
+    color: var(--fg-color);
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    background-image: url("Dirty-Surface-Texture-06 copy.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-body{
-    color: white;
-    background-color: black;
-}
+
 
 .back {
 	aspect-ratio: 1;
 	position: fixed;
-	z-index: 100;
-	inset-block-start: calc(var(--padding) / 1.45);
-	inset-inline-end: var(--padding);
+	z-index: 101;
+	inset-block-start: calc(var(--padding) / 5);
+	inset-inline-start: calc(var(--padding) / 2);
 	font-size: calc(2 * var(--fontsize));
 	padding: 0;
 	color: var(--fg-color);
-	filter: drop-shadow(0rem 0rem 0.06rem var(--bg-color));
+	filter: drop-shadow(0.3rem 0.1rem 0.05rem #000000);
 	/* background-color: white; */
 }
 
@@ -42,19 +42,27 @@ h1, h2, h3, h4, p {
 
 h1 {
     padding-block-start: 0;
-    font-size: 2.6rem;
-    color: rgb(255, 255, 255);
+    font-size: 3.2rem;
+    color: var(--fg-color);
 }
 
 h1, h2, h3, h4, blockquote p, time {
 font-family: "Libre Caslon Text", serif;
 font-weight: 700;
 font-style: normal;
+}
+
+h1, h2, h3, blockquote p, time {
 mix-blend-mode: color-dodge;
 }
 
-h4, blockquote p, time p {
+
+blockquote p, time p {
     font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.8rem;
 }
 
 p {
@@ -80,12 +88,13 @@ blockquote {
     text-align: center;
     margin-block-start: calc(2 * var(--padding));
     padding-inline: calc(var(--padding) / 2);
-    background-color: white;
+    background-color: var(--fg-color);
     mix-blend-mode: color-dodge;
+    margin-block-end: calc(10 * var(--padding));
 }
 
 blockquote p {
-    color: black;
+    color: var(--bg-color);
     mix-blend-mode: normal;
     padding-block-end: 0;
     padding-block: calc( 2 * var(--padding));
@@ -95,12 +104,11 @@ blockquote p {
 footer {
     background: #7F7D7E;
     background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
-    color: rgb(59, 58, 58);
+    color: var(--grey);
     padding-block-start: var(--padding);
     margin-block-start: calc( 2* var(--padding));
     display: flex;
     column-gap: calc(var(--padding) * 3);
-    /* mix-blend-mode: color-dodge; */
     font-weight: 900;
 }
 
@@ -108,43 +116,69 @@ section > p:first-of-type {
 padding-block-start: var(--padding);
 }
 
-h4 {
-position: sticky;
-inset-block-start: 0;
-}
-
 /* learned inversion technique in this thread: https://stackoverflow.com/questions/3433641/flipping-inverting-mirroring-text-using-css-only */
 .typeset {
 position: static;
 transform: scaleX(-1);
-padding-block-start: calc(3 * var(--padding));
 font-size: 1.35rem;
 display: flex;
-color: rgb(59, 58, 58);
+color: var(--grey);
 column-gap: 0.05rem;
 mix-blend-mode: normal;
+flex-wrap: wrap;
 }
 
 .space {
     opacity: 0;
 }
 
+/* gradients made with https://cssgradient.io/ */
 .letterblock {
     width: auto;
     padding-inline: 0.05rem;
     height: 2.6rem;
-    border-width: 0.5rem;
-    border-color: var(--fg-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: drop-shadow(0.3rem 0.1rem 0.05rem #000000);
     background: #7F7D7E;
     background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
 }
 
-.typeset2 {
+
+
+
+/* drop shadow css obtained from https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/drop-shadow */
+.sticky {
+position: sticky;
+inset-block-start: 0;
+filter: drop-shadow(0.3rem 0.1rem 0.05rem #000000);
+background: #000000;
+background: linear-gradient(180deg,rgba(0, 0, 0, 1) 71%, rgba(0, 0, 0, 0) 100%);
+padding-block-end: calc(var(--padding) / 1);
+
+z-index: 100;
+}
+
+.line, .line2 {
+    background-color: var(--accent-color);
+    width: 100%;
+    height: calc(var(--padding) / 2);
+    margin-block-start: calc(3 * var(--padding));
+    mix-blend-mode: color-dodge;
+}
+
+.line2 {
+    margin-block-start: 0;
+}
+
+.main .typeset2 {
     background-color: var(--accent-color);
 }
+
+
+
+
+
+
 
 
