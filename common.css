@@ -16,7 +16,8 @@ body{
 	color: var(--fg-color);
 	color: var(--fg-color);
 	background-color: var(--bg-color);
-	background-image: url("Dirty-Surface-Texture-06 copy.jpg");
+	/* background-image: url("Dirty-Surface-Texture-06 copy.jpg"); */
+	background-image: url("Dirty-Surface-Texture-06 copy.gif");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -94,7 +95,7 @@ footer {
 	padding-block-start: var(--padding);
 	margin-block-start: calc( 2* var(--padding));
 	display: flex;
-	column-gap: calc(var(--padding) * 3);
+	justify-content: space-between;
 	font-weight: 900;
 }
 
