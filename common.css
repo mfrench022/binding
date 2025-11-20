@@ -157,6 +157,7 @@ margin-block-end: calc(var(--padding) /3);
 /* gradients made with https://cssgradient.io/ */
 .letterblock {
 	width: auto;
+	transition: 300ms ease-in-out;
 	padding-inline: 0.05rem;
 	display: flex;
 	align-items: center;
@@ -170,6 +171,7 @@ margin-block-end: calc(var(--padding) /3);
 .letterblock:hover {
 	height: 2.6rem;
 	font-size: 1.35rem;
+	cursor: pointer;
 }
 
 
