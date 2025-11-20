@@ -93,13 +93,14 @@ blockquote p {
 
 
 footer {
-    background-color: white;
-    color: black;
+    background: #7F7D7E;
+    background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
+    color: rgb(59, 58, 58);
     padding-block-start: var(--padding);
     margin-block-start: calc( 2* var(--padding));
     display: flex;
     column-gap: calc(var(--padding) * 3);
-    mix-blend-mode: color-dodge;
+    /* mix-blend-mode: color-dodge; */
     font-weight: 900;
 }
 
@@ -137,8 +138,9 @@ mix-blend-mode: normal;
     display: flex;
     align-items: center;
     justify-content: center;
+    filter: drop-shadow(0.3rem 0.1rem 0.05rem #000000);
     background: #7F7D7E;
-background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
+    background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
 }
 
 .typeset2 {
