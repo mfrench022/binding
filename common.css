@@ -5,30 +5,31 @@
 	--bg-color: black;
 	--fg-color: white;
 	--accent-color: blue;
-    --grey: rgb(59, 58, 58);
+	--grey: rgb(59, 58, 58);
 	--padding: 1.5rem;
 	--fontsize: 1rem;
+	--sticky-overlap: 3.5rem;
 	font-size: 120%;
 }
 
 body{
-    color: var(--fg-color);
-    color: var(--fg-color);
-    background-color: var(--bg-color);
-    background-image: url("Dirty-Surface-Texture-06 copy.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+	color: var(--fg-color);
+	color: var(--fg-color);
+	background-color: var(--bg-color);
+	background-image: url("Dirty-Surface-Texture-06 copy.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 h1, h2, h3, h4, p {
-    padding-inline: calc(var(--padding) / 2);
+	padding-inline: calc(var(--padding) / 2);
 }
 
 h1 {
-    padding-block-start: 0;
-    font-size: 3.2rem;
-    color: var(--fg-color);
+	padding-block-start: 0;
+	font-size: 3.2rem;
+	color: var(--fg-color);
 }
 
 h1, h2, h3, h4, blockquote p, time {
@@ -43,11 +44,11 @@ mix-blend-mode: color-dodge;
 
 
 blockquote p, time p {
-    font-size: 1.25rem;
+	font-size: 1.25rem;
 }
 
 h4 {
-    font-size: 1.8rem;
+	font-size: 1.8rem;
 }
 
 p {
@@ -55,59 +56,72 @@ font-family: "Hanken Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 0.98rem;
+  font-size: 0.95rem;
   padding-block-end: var(--padding);
 }
 
 h3 {
-    padding-block-start: calc(3 * var(--padding));
-    font-style: italic;
+	padding-block-start: calc(3 * var(--padding));
+	font-style: italic;
 }
 
 h3 time {
-    font-style: italic;
+	font-style: italic;
 }
 
 
 blockquote {
-    text-align: center;
-    margin-block-start: calc(2 * var(--padding));
-    padding-inline: calc(var(--padding) / 2);
-    background-color: var(--fg-color);
-    mix-blend-mode: color-dodge;
-    margin-block-end: calc(4 * var(--padding));
+	text-align: center;
+	margin-block-start: calc(2 * var(--padding));
+	padding-inline: calc(var(--padding) / 2);
+	background-color: var(--fg-color);
+	mix-blend-mode: color-dodge;
+	margin-block-end: calc(4 * var(--padding));
 }
 
 blockquote p {
-    color: var(--bg-color);
-    mix-blend-mode: normal;
-    padding-block-end: 0;
-    padding-block: calc( 2 * var(--padding));
+	color: var(--bg-color);
+	mix-blend-mode: normal;
+	padding-block-end: 0;
+	padding-block: calc( 2 * var(--padding));
 }
 
 
 footer {
-    background: #7F7D7E;
-    background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
-    color: var(--grey);
-    padding-block-start: var(--padding);
-    margin-block-start: calc( 2* var(--padding));
-    display: flex;
-    column-gap: calc(var(--padding) * 3);
-    font-weight: 900;
+	background: #7F7D7E;
+	background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
+	color: var(--grey);
+	padding-block-start: var(--padding);
+	margin-block-start: calc( 2* var(--padding));
+	display: flex;
+	column-gap: calc(var(--padding) * 3);
+	font-weight: 900;
 }
 
 .top {
-    width: 100%;
-    height: calc(2 * var(--padding));
-    position: fixed;
-    z-index: 101;
-    inset-block-start: 0;
-    display: flex;
-    justify-content: space-between;
-    padding-inline: calc(var(--padding) /2);
-    background: #000000;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+	width: 100%;
+	height: calc(2 * var(--padding));
+	position: fixed;
+	z-index: 101;
+	inset-block-start: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: calc(var(--padding) /2);
+	padding-block-end: calc(var(--padding) / 3);
+	background: #000000;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+}
+
+.top p {
+	text-align: right;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	margin: 0;
+	padding: 0;
 }
 
 .back {
@@ -117,7 +131,7 @@ footer {
 }
 
 section > p:first-of-type {
-padding-block-start: var(--padding);
+padding-block-start: calc(var(--padding) * 3);
 }
 
 /* learned inversion technique in this thread: https://stackoverflow.com/questions/3433641/flipping-inverting-mirroring-text-using-css-only */
@@ -130,61 +144,77 @@ color: var(--grey);
 column-gap: 0.05rem;
 mix-blend-mode: normal;
 flex-wrap: wrap;
+margin-block-end: calc(var(--padding) /3);
 }
 
 .space {
-    opacity: 0;
+	opacity: 0;
 }
 
 /* gradients made with https://cssgradient.io/ */
 .letterblock {
-    width: auto;
-    padding-inline: 0.05rem;
-    height: 2.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #7F7D7E;
-    background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
+	width: auto;
+	padding-inline: 0.05rem;
+	height: 2.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #7F7D7E;
+	background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
 }
 
 
+.formersticky {
+	position: relative;
+	background: #000000;
+	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 71%, rgba(0, 0, 0, 0) 100%);
+	padding-block-end: calc(var(--padding) / 1);
+	z-index: 100;
+}
 
 
-/* drop shadow css obtained from https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/drop-shadow */
+.sticky h4 {
+	font-size: 1.3rem;
+}
+
 .sticky {
-position: sticky;
-inset-block-start: calc(1.6 * var(--padding));
-filter: drop-shadow(0.3rem 0.1rem 0.05rem #000000);
-background: #000000;
-background: linear-gradient(180deg,rgba(0, 0, 0, 1) 71%, rgba(0, 0, 0, 0) 100%);
-padding-block-end: calc(var(--padding) / 1);
-
-z-index: 100;
+	position: sticky;
+	inset-block-start: calc(1 * var(--padding));
+	margin-block-start: calc(-2.2 * var(--sticky-overlap));
+	background: #000000;
+	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 71%, rgba(0, 0, 0, 0) 100%);
+	padding-block: calc(var(--padding) / 1);
+	z-index: 99; 
 }
 
 .line, .line2 {
-    background-color: var(--accent-color);
-    width: 100%;
-    height: calc(var(--padding) / 2);
-    margin-block-start: calc(3 * var(--padding));
-    mix-blend-mode: color-dodge;
+	background-color: var(--accent-color);
+	width: 100%;
+	height: calc(var(--padding) / 2);
+	margin-block-start: calc(3 * var(--padding));
+	mix-blend-mode: color-dodge;
 }
 
 .line2 {
-    margin-block-start: 0;
+	margin-block-start: 0;
 }
 
 .line3 {
-    width: 100%;
-    height: calc(var(--padding) / 2);
-    background: #000000;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 0) 100%);
+	width: 100%;
+	height: calc(var(--padding) / 2);
+	background: #000000;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 0) 100%);
 }
 
 .main .typeset2 {
-    background-color: var(--accent-color);
+	background-color: var(--accent-color);
+	padding-block: calc(var(--padding) /2);
 }
+
+.main {
+	margin-block-start: calc(6* var(--padding));
+}
+
 
 
 
