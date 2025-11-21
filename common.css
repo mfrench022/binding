@@ -169,8 +169,8 @@ margin-block-end: calc(var(--padding) /3);
 }
 
 .letterblock:hover {
-	height: 2.6rem;
-	font-size: 1.35rem;
+	height: 2rem;
+	font-size: 1.1rem;
 	cursor: pointer;
 }
 
@@ -224,6 +224,28 @@ margin-block-end: calc(var(--padding) /3);
 
 .main {
 	margin-block-start: calc(6* var(--padding));
+}
+
+@media (width > 700px) {
+	:root {
+		font-size: 150%;
+	}
+
+	h1, h2, h3, h4, p {
+	padding-inline: calc(var(--padding) / 0.5);
+}
+
+}
+
+@media (width > 1500px) {
+h4, p {
+	padding-inline: calc(var(--padding) / 0.08);
+}
+
+h1 {
+	font-size: 4.5rem;
+}
+
 }
 
 
