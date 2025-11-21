@@ -92,19 +92,24 @@ blockquote p {
 
 
 footer {
-	background: #7F7D7E;
-	background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
-	color: var(--grey);
+	background-color: var(--accent-color);
+	color: var(--fg-color);
 	padding-block: var(--padding);
 	margin-block-start: calc( 2* var(--padding));
 	display: flex;
 	justify-content: space-between;
 	font-weight: 900;
+	mix-blend-mode: color-dodge;
 }
 
 footer p {
 	margin: 0;
 	padding-block: 0;
+	font-family: "Libre Caslon Text", serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 0.8rem;
+	text-align: right;
 }
 
 .top {
