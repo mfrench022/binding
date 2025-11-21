@@ -95,11 +95,16 @@ footer {
 	background: #7F7D7E;
 	background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
 	color: var(--grey);
-	padding-block-start: var(--padding);
+	padding-block: var(--padding);
 	margin-block-start: calc( 2* var(--padding));
 	display: flex;
 	justify-content: space-between;
 	font-weight: 900;
+}
+
+footer p {
+	margin: 0;
+	padding-block: 0;
 }
 
 .top {
@@ -238,7 +243,7 @@ margin-block-end: calc(var(--padding) /3);
 }
 
 @media (width > 1500px) {
-h4, p {
+h4, article p {
 	padding-inline: calc(var(--padding) / 0.08);
 }
 
