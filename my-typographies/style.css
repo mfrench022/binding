@@ -9,4 +9,5 @@
 
 .first {
     margin-block-end: (-2 * var(--padding));
+    margin-block-start: var(--padding);
 }

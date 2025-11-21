@@ -8,7 +8,7 @@
 	--grey: rgb(59, 58, 58);
 	--padding: 1.5rem;
 	--fontsize: 1rem;
-	--sticky-overlap: 3.5rem;
+	--sticky-overlap: 5rem;
 	font-size: 120%;
 }
 
@@ -72,11 +72,11 @@ h3 time {
 
 
 blockquote {
-	text-align: center;
 	padding-inline: calc(var(--padding) / 2);
 	background-color: var(--fg-color);
 	mix-blend-mode: color-dodge;
 	margin-block-end: calc(4 * var(--padding));
+	padding-block-start: calc( 2 * var(--padding));
 	/* border-block-start-width: calc(var(--padding) / 2);
 	border-block-start-color: var(--accent-color);
 	border-block-start-style: solid; */
@@ -86,7 +86,7 @@ blockquote p {
 	color: var(--bg-color);
 	mix-blend-mode: normal;
 	padding-block-end: 0;
-	padding-block: calc( 2 * var(--padding));
+	padding-block-end: calc( 2 * var(--padding));
 }
 
 
@@ -216,6 +216,10 @@ margin-block-end: calc(var(--padding) /3);
 
 .line2 {
 	margin-block-start: 0;
+}
+
+.typeset2 {
+	padding-block: var(--padding);
 }
 
 .main .typeset2 {
