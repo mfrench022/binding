@@ -6,3 +6,7 @@
 	background: #0000FF;
     background: linear-gradient(0deg, rgba(196, 0, 222, 1) 0%, rgba(196, 0, 222, 0) 100%);
 }
+
+.first {
+    margin-block-end: (-2 * var(--padding));
+}
