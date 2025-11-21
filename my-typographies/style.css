@@ -1,3 +1,8 @@
 :root {
     --accent-color: rgb(196, 0, 222);
 }
+
+.line, .line2 {
+	background: #0000FF;
+    background: linear-gradient(0deg, rgba(196, 0, 222, 1) 0%, rgba(196, 0, 222, 0) 100%);
+}

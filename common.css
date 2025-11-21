@@ -73,14 +73,13 @@ h3 time {
 
 blockquote {
 	text-align: center;
-	margin-block-start: calc(2 * var(--padding));
 	padding-inline: calc(var(--padding) / 2);
 	background-color: var(--fg-color);
 	mix-blend-mode: color-dodge;
 	margin-block-end: calc(4 * var(--padding));
-	border-block-start-width: calc(var(--padding) / 2);
+	/* border-block-start-width: calc(var(--padding) / 2);
 	border-block-start-color: var(--accent-color);
-	border-block-start-style: solid;
+	border-block-start-style: solid; */
 }
 
 blockquote p {
@@ -209,22 +208,14 @@ margin-block-end: calc(var(--padding) /3);
 }
 
 .line, .line2 {
-	background-color: var(--accent-color);
 	width: 100%;
-	height: calc(var(--padding) / 2);
-	margin-block-start: calc(3 * var(--padding));
+	height: calc(var(--padding) * 2);
+	margin-block-start: calc(2 * var(--padding));
 	mix-blend-mode: color-dodge;
 }
 
 .line2 {
 	margin-block-start: 0;
-}
-
-.line3 {
-	width: 100%;
-	height: calc(var(--padding) / 2);
-	background: #000000;
-	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 0) 100%);
 }
 
 .main .typeset2 {
