@@ -73,13 +73,8 @@ h3 time {
 
 blockquote {
 	padding-inline: calc(var(--padding) / 2);
-	background-color: var(--fg-color);
-	mix-blend-mode: color-dodge;
-	margin-block-end: calc(4 * var(--padding));
+	background-color: rgba(255, 255, 255, 0.75);
 	padding-block-start: calc( 2 * var(--padding));
-	/* border-block-start-width: calc(var(--padding) / 2);
-	border-block-start-color: var(--accent-color);
-	border-block-start-style: solid; */
 }
 
 blockquote p {
@@ -144,19 +139,7 @@ a {
 }
 
 section > p:first-of-type {
-padding-block-start: calc(var(--padding) * 3);
-}
-
-/* learned inversion technique in this thread: https://stackoverflow.com/questions/3433641/flipping-inverting-mirroring-text-using-css-only */
-.typeset {
-position: static;
-transform: scaleX(-1);
-display: flex;
-color: var(--grey);
-column-gap: 0.05rem;
-mix-blend-mode: normal;
-flex-wrap: wrap;
-margin-block-end: calc(var(--padding) /3);
+padding-block-start: calc(var(--padding) * 4);
 }
 
 .space {
@@ -207,15 +190,19 @@ margin-block-end: calc(var(--padding) /3);
 	z-index: 99; 
 }
 
-.line, .line2 {
+.line, .line2, .line3 {
 	width: 100%;
 	height: calc(var(--padding) * 2);
 	margin-block-start: calc(2 * var(--padding));
 	mix-blend-mode: color-dodge;
 }
 
-.line2 {
+.line2, .line3 {
 	margin-block-start: 0;
+}
+
+.line3 {
+	margin-block-end: calc(3 * var(--padding));
 }
 
 .typeset2 {
@@ -237,9 +224,8 @@ margin-block-end: calc(var(--padding) /3);
 	}
 
 	h1, h2, h3, h4, p {
-	padding-inline: calc(var(--padding) / 0.5);
-}
-
+		padding-inline: calc(var(--padding) / 0.5);
+	}
 }
 
 @media (width > 1500px) {

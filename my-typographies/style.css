@@ -7,7 +7,16 @@
     background: linear-gradient(0deg, rgba(196, 0, 222, 1) 0%, rgba(196, 0, 222, 0) 100%);
 }
 
+.line3 {
+	background: #0000FF;
+    background: linear-gradient(180deg, rgba(196, 0, 222, 1) 0%, rgba(196, 0, 222, 0) 100%);
+}
+
 .first {
     margin-block-end: (-2 * var(--padding));
     margin-block-start: var(--padding);
+}
+
+.shiftup {
+     margin-block-start: calc(-4 * var(--padding));
 }
