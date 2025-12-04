@@ -159,4 +159,12 @@ section {
 }
 }
 
+@media (width > 1500px) {
+ svg {
+		width: 250rem;
+	}
+
+}
+
+
 
