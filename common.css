@@ -49,7 +49,7 @@ blockquote p, time p {
 }
 
 h4 {
-	font-size: 2.1rem;
+	font-size: 2.7rem;
 }
 
 p {
@@ -114,13 +114,6 @@ footer p {
 	position: relative;
 	z-index: 300;
 	height: calc(2 * var(--padding));
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-inline: calc(var(--padding) /2);
-	padding-block-end: calc(var(--padding) / 3);
-	background: #000000;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
 }
 
 
@@ -138,6 +131,27 @@ a {
 .back {
 	font-size: calc(1.5 * var(--fontsize));
 	color: var(--fg-color);
+	transition: 300ms ease-in-out;
+	position: absolute;
+	inset-inline-start: calc(var(--padding) /2);
+	inset-block-end: calc(var(--padding) / 3);
+}
+
+.menu {
+	color: var(--fg-color);
+	transition: 300ms ease-in-out;
+	position: absolute;
+	inset-inline-end: calc(var(--padding) /2);
+	inset-block-start: calc(var(--padding) / 2);
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	column-gap: var(--padding);
+	row-gap: calc(var(--padding) / 3);
+	mix-blend-mode: color-dodge;
+}
+
+.menu a {
 	transition: 300ms ease-in-out;
 }
 
@@ -189,7 +203,8 @@ padding-block-start: calc(var(--padding) * 4);
 	margin-block-start: calc(-1.5 * var(--sticky-overlap));
 	background: #000000;
 	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 71%, rgba(0, 0, 0, 0) 100%);
-	padding-block: calc(var(--padding) / 1);
+	padding-block-start: calc(var(--padding) / 1.5);
+	padding-block-end: calc(var(--padding) / 1);
 	z-index: 99; 
 }
 
@@ -221,6 +236,12 @@ padding-block-start: calc(var(--padding) * 4);
 	margin-block-start: calc(5* var(--padding));
 }
 
+@media (width > 550px) {
+	.menu {
+	flex-direction: row;
+}
+}
+
 @media (width > 700px) {
 	:root {
 		font-size: 150%;
@@ -241,12 +262,4 @@ h1 {
 }
 
 }
-
-
-
-
-
-
-
-
 
