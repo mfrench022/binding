@@ -28,6 +28,7 @@ header p {
     font-style: normal;
     padding-block: 0;
     text-align: right;
+    color: var(--bg-color);
 }
 
 em {
