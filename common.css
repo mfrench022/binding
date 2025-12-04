@@ -49,7 +49,7 @@ blockquote p, time p {
 }
 
 h4 {
-	font-size: 2.7rem;
+	font-size: 1.8rem;
 }
 
 p {
@@ -163,26 +163,6 @@ padding-block-start: calc(var(--padding) * 4);
 	opacity: 0;
 }
 
-/* gradients made with https://cssgradient.io/ */
-.letterblock {
-	width: auto;
-	transition: 300ms ease-in-out;
-	padding-inline: 0.05rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 1.5rem;
-	font-size: 1rem;
-	background: #7F7D7E;
-	background: linear-gradient(180deg, rgba(127, 125, 126, 1) 0%, rgba(180, 179, 180, 1) 17%, rgba(252, 252, 252, 1) 38%, rgba(180, 180, 180, 1) 72%, rgba(123, 122, 122, 1) 100%);
-}
-
-.letterblock:hover {
-	height: 2rem;
-	font-size: 1.1rem;
-	cursor: pointer;
-}
-
 
 .formersticky {
 	position: relative;
@@ -194,7 +174,7 @@ padding-block-start: calc(var(--padding) * 4);
 
 
 .sticky h4 {
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 
 .sticky {
@@ -255,6 +235,14 @@ padding-block-start: calc(var(--padding) * 4);
 		padding-block-end: calc( 1.25 * var(--padding));
 		line-height: calc(1.5 * var(--fontsize));
 	}
+
+	h4 {
+	font-size: 2.7rem;
+}
+
+.sticky h4 {
+	font-size: 1.3rem;
+}
 }
 
 @media (width > 1100px) {

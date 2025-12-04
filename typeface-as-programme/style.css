@@ -19,6 +19,12 @@ blockquote a:hover {
     transition: 300ms ease-in-out;
 }
 
+blockquote a {
+    background-color: white;
+    mix-blend-mode: exclusion;
+    transition: 300ms ease-in-out;
+}
+
 .back:hover {
     color: var(--accent-color2);
     transition: 300ms ease-in-out;

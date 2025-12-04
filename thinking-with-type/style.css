@@ -13,6 +13,12 @@
     background: linear-gradient(180deg, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 255, 0) 100%);
 }
 
+blockquote a {
+    background-color: white;
+    mix-blend-mode: exclusion;
+    transition: 300ms ease-in-out;
+}
+
 blockquote a:hover {
     background-color: var(--accent-color);
     mix-blend-mode: color-burn;
