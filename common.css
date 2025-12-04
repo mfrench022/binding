@@ -174,14 +174,18 @@ padding-block-start: calc(var(--padding) * 4);
 }
 
 
-.formersticky {
+.formersticky, .formersticky2 {
 	position: relative;
-	background: #000000;
 	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 71%, rgba(0, 0, 0, 0) 100%);
 	padding-block-end: calc(var(--padding) / 1);
 	z-index: 100;
 }
 
+.formersticky2 {
+	background: #000000;
+	padding-block: calc(var(--padding) / 2);
+	margin-bottom: var(--padding);
+}
 
 .sticky h4 {
 	font-size: 1rem;
@@ -267,7 +271,7 @@ padding-block-start: calc(var(--padding) * 4);
 
 @media (width > 1100px) {
 
-	.formersticky h4 {
+	.formersticky h4, .formersticky2 h4 {
 		max-width: 23.5ch;
 		margin: auto;
 	}
