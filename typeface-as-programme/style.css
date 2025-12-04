@@ -1,6 +1,5 @@
 :root {
-    --accent-color: rgb(30, 144, 28);
-    --accent-color2: rgb(240, 238, 123, 0.5);
+    --accent-color: rgb(30, 175, 28);
     --accent-color3: rgb(240, 238, 123);
 }
 
@@ -31,17 +30,17 @@ blockquote em {
 }
 
 .back:hover {
-    color: var(--accent-color2);
+    color: var(--accent-color);
     transition: 300ms ease-in-out;
 }
 
 .menu a:hover {
-    background-color: var(--accent-color2);
+    background-color: var(--accent-color);
     transition: 300ms ease-in-out;
 }
 
 .selected {
-    background-color: var(--accent-color2);
+    background-color: var(--accent-color);
 }
 
 
