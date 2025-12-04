@@ -28,9 +28,10 @@ h1, h2, h3, h4, p {
 }
 
 h1 {
-	padding-block-start: 0;
 	font-size: 2.4rem;
 	color: var(--fg-color);
+	background-color: var(--accent-color);
+	padding-block: calc(var(--padding) /2);
 }
 
 h1, h2, h3, h4, blockquote p, time {
@@ -205,11 +206,6 @@ padding-block-start: calc(var(--padding) * 4);
 
 .typeset2 {
 	padding-block: var(--padding);
-}
-
-.main .typeset2 {
-	background-color: var(--accent-color);
-	padding-block: calc(var(--padding) /2);
 }
 
 .main {

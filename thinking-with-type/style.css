@@ -1,6 +1,7 @@
 :root {
 	--accent-color: blue;
-    --accent-color2: rgba(0, 0, 255, 0.5);
+    --accent-color2: rgb(44, 244, 255, 0.5);
+    --accent-color3: rgb(44, 244, 255);
 }
 
 .line, .line2 {
@@ -39,4 +40,29 @@ blockquote a:hover {
     background-color: var(--accent-color2);
 }
 
+
+.italic {
+        font-style: italic;
+        mix-blend-mode: normal;
+    }
+
+
+@media (width > 1100px) {
+
+
+    h1 {
+        font-size: 5.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .italic {
+        position: absolute;
+        font-size: 10rem;
+        inset-inline-start: 4rem;
+        inset-block-start: 2.8rem;
+        z-index: -10;
+        color: var(--accent-color3);
+    }
+
+}
 
