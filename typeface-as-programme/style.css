@@ -26,6 +26,10 @@ blockquote a {
     transition: 300ms ease-in-out;
 }
 
+blockquote em {
+    color: var(--accent-color);
+}
+
 .back:hover {
     color: var(--accent-color2);
     transition: 300ms ease-in-out;
