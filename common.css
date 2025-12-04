@@ -185,6 +185,7 @@ padding-block-start: calc(var(--padding) * 4);
 	background: #000000;
 	padding-block: calc(var(--padding) / 2);
 	margin-bottom: var(--padding);
+	padding-block: 0;
 }
 
 .sticky h4 {
