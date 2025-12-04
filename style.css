@@ -1,7 +1,101 @@
-body {
-    padding: 2rem;
+/* pulled centering code from an old demo from class last year https://codepen.io/Michael-French/pen/RNwopBr */
+svg {
+    background-color: orange;
+    position: fixed;
+    z-index: -20;
+    inset-block-start: 2rem;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform:translate(-50%, -50%);
+    width: 75rem;
 }
 
-p {
-    padding-block-end: 1rem;
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(var(--padding) * 1.25);
+    position: fixed;
+    width: 100%;
+    inset-block-start: 0;
+    inset-inline-start: calc(var(--padding) * 1.25);
+    flex-direction: column;
+    row-gap: var(--padding);
 }
+
+header p {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: calc(var(--fontsize)* 0.8);
+    padding-block: 0;
+}
+
+em {
+    font-style: italic;
+    padding-inline-end: 0.4rem;
+}
+
+/* text-shadow preset obtained from https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-shadow */
+
+.purple {
+    text-shadow: rgb(196, 0, 222) 0.1rem 0 0.5rem;
+}
+
+.purple:hover {
+    color: rgb(196, 0, 222);
+}
+
+.green {
+    text-shadow: rgb(30, 144, 28) 0.1rem 0 0.5rem;
+}
+
+.green:hover {
+    color: rgb(30, 144, 28);
+}
+
+.blue {
+    text-shadow: blue 0.1rem 0 0.5rem;
+}
+
+.blue:hover {
+    color: blue;
+}
+
+
+
+
+@media (width > 550px) {
+ svg {
+        width: 100rem;
+    }
+
+}
+
+@media (width > 700px) {
+
+     svg {
+        width: 120rem;
+    }
+
+    header {
+    inset-inline-start: 0;
+    row-gap: calc(var(--padding) / 2);
+}
+
+header p {
+    font-size: calc(var(--fontsize)* 0.8);
+}
+}
+
+@media (width > 1160px) {
+ svg {
+        width: 170rem;
+    }
+
+      header {
+    flex-direction: row;
+}
+
+}
+
+
