@@ -80,6 +80,9 @@ section {
 	width: 100%;
 	height: 10rem;
 	mix-blend-mode: lighten;
+
+	/* wanted to use the same blend mode (color dodge) as other pages for consistency, but used lighten for the presentation so that it will show up on projector:
+	mix-blend-mode: color-dodge; */
 }
 
 .gradient1 {

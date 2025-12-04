@@ -80,6 +80,7 @@ blockquote {
 	padding-block-start: calc( 2 * var(--padding));
 	position: relative;
 	overflow-y: hidden;
+	min-height: 12.75rem;
 }
 
 blockquote p {
