@@ -5,12 +5,10 @@
 }
 
 .line, .line2 {
-	background: #0000FF;
     background: linear-gradient(0deg, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 255, 0) 100%);
 }
 
 .line3 {
-	background: #0000FF;
     background: linear-gradient(180deg, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 255, 0) 100%);
 }
 

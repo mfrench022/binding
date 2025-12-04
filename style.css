@@ -72,7 +72,7 @@ section {
 .gradient1, .gradient2, .gradient3, .gradient4, .gradient5, .gradient6 {
     width: 100%;
     height: 10rem;
-    background-color: green;
+    mix-blend-mode: color-dodge;
 }
 
 .gradient1 {
