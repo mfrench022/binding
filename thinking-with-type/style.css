@@ -1,3 +1,7 @@
+:root {
+	--accent-color: blue;
+}
+
 .line, .line2 {
 	background: #0000FF;
     background: linear-gradient(0deg, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 255, 0) 100%);
@@ -7,3 +11,17 @@
 	background: #0000FF;
     background: linear-gradient(180deg, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 255, 0) 100%);
 }
+
+blockquote a:hover {
+    background-color: var(--accent-color);
+    mix-blend-mode: color-burn;
+    transition: 300ms ease-in-out;
+}
+
+.back:hover {
+    color: var(--accent-color);
+    transition: 300ms ease-in-out;
+}
+
+
+

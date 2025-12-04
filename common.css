@@ -84,6 +84,9 @@ blockquote p {
 	padding-block-end: calc( 2 * var(--padding));
 }
 
+blockquote a {
+	transition: 300ms ease-in-out;
+}
 
 footer {
 	background-color: var(--accent-color);
@@ -108,10 +111,9 @@ footer p {
 
 .top {
 	width: 100%;
+	position: relative;
+	z-index: 300;
 	height: calc(2 * var(--padding));
-	position: fixed;
-	z-index: 101;
-	inset-block-start: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -120,6 +122,7 @@ footer p {
 	background: #000000;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
 }
+
 
 .top p {
 	text-align: right;
@@ -133,9 +136,9 @@ a {
 }
 
 .back {
-	font-size: calc(2 * var(--fontsize));
+	font-size: calc(1.5 * var(--fontsize));
 	color: var(--fg-color);
-	/* background-color: white; */
+	transition: 300ms ease-in-out;
 }
 
 section > p:first-of-type {
@@ -182,7 +185,7 @@ padding-block-start: calc(var(--padding) * 4);
 
 .sticky {
 	position: sticky;
-	inset-block-start: calc(1 * var(--padding));
+	inset-block-start: calc(0 * var(--padding));
 	margin-block-start: calc(-1.5 * var(--sticky-overlap));
 	background: #000000;
 	background: linear-gradient(180deg,rgba(0, 0, 0, 1) 71%, rgba(0, 0, 0, 0) 100%);
@@ -215,7 +218,7 @@ padding-block-start: calc(var(--padding) * 4);
 }
 
 .main {
-	margin-block-start: calc(6* var(--padding));
+	margin-block-start: calc(5* var(--padding));
 }
 
 @media (width > 700px) {

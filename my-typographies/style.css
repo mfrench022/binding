@@ -20,3 +20,14 @@
 .shiftup {
      margin-block-start: calc(-4 * var(--padding));
 }
+
+blockquote a:hover {
+    background-color: var(--accent-color);
+    mix-blend-mode: color-burn;
+    transition: 300ms ease-in-out;
+}
+
+.back:hover {
+    color: var(--accent-color);
+    transition: 300ms ease-in-out;
+}
