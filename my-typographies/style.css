@@ -1,87 +1,84 @@
 :root {
-    --accent-color: rgb(196, 0, 222);
-  --accent-color3: rgb(255, 137, 225);
+	--accent-color: rgb(196, 0, 222);
+	--accent-color3: rgb(255, 137, 225);
 }
 
 .line, .line2 {
-    background: linear-gradient(0deg, rgba(196, 0, 222, 1) 0%, rgba(196, 0, 222, 0) 100%);
+	background: linear-gradient(0deg, rgba(196, 0, 222, 1) 0%, rgba(196, 0, 222, 0) 100%);
 }
 
 .line3 {
-    background: linear-gradient(180deg, rgba(196, 0, 222, 1) 0%, rgba(196, 0, 222, 0) 100%);
+	background: linear-gradient(180deg, rgba(196, 0, 222, 1) 0%, rgba(196, 0, 222, 0) 100%);
 }
 
 .first {
-    margin-block-end: (-2 * var(--padding));
-    margin-block-start: var(--padding);
+	margin-block-end: (-2 * var(--padding));
+	margin-block-start: var(--padding);
 }
 
 .shiftup {
-     margin-block-start: calc(-4 * var(--padding));
+	 margin-block-start: calc(-4 * var(--padding));
 }
 
 blockquote a:hover {
-    background-color: var(--accent-color);
-    mix-blend-mode: darken;
-    transition: 300ms ease-in-out;
-    color:  var(--fg-color);
+	background-color: var(--accent-color);
+	mix-blend-mode: darken;
+	transition: 300ms ease-in-out;
+	color:  var(--fg-color);
 }
 
 blockquote em {
-    color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 .back:hover {
-    color: var(--accent-color);
-    transition: 300ms ease-in-out;
+	color: var(--accent-color);
+	transition: 300ms ease-in-out;
 }
 
 .menu a:hover {
-    background-color: var(--accent-color);
-    transition: 300ms ease-in-out;
+	background-color: var(--accent-color);
+	transition: 300ms ease-in-out;
 }
 
 .selected {
-    background-color: var(--accent-color);
-    mix-blend-mode: color-burn;
+	background-color: var(--accent-color);
+	mix-blend-mode: color-burn;
 }
 
 .italic {
-        font-style: italic;
-        mix-blend-mode: normal;
-    }
+	font-style: italic;
+	mix-blend-mode: normal;
+}
 
-
-    .inline {
+.inline {
 	transition: 300ms ease-in-out;
 	font-weight: 500;
-    color: var(--fg-color);
-    background-color: var(--accent-color);
-    mix-blend-mode: lighten;
+	color: var(--fg-color);
+	background-color: var(--accent-color);
+	mix-blend-mode: lighten;
 }
 
 .inline:hover {
-    transition: 300ms ease-in-out;
-    color: var(--fg-color);
-    mix-blend-mode: color-dodge;
+	transition: 300ms ease-in-out;
+	color: var(--fg-color);
+	mix-blend-mode: color-dodge;
 }
-
 
 @media (width > 1100px) {
 
+	h1 {
+		font-size: 5.5rem;
+		letter-spacing: 0.2rem;
+	}
 
-    h1 {
-        font-size: 5.5rem;
-        letter-spacing: 0.2rem;
-    }
-
-    .italic {
-        position: absolute;
-        font-size: 10rem;
-        inset-inline-start: 8.5rem;
-        inset-block-start: 3rem;
-        z-index: -10;
-        color: var(--accent-color3);
-    }
+	.italic {
+		position: absolute;
+		font-size: 10rem;
+		inset-inline-start: 8.5rem;
+		inset-block-start: 3rem;
+		z-index: -10;
+		color: var(--accent-color3);
+	}
 
 }
