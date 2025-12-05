@@ -32,6 +32,9 @@ header p {
 
 em {
 	font-style: italic;
+}
+
+header em {
 	padding-inline-end: 0.4rem;
 }
 
@@ -111,7 +114,7 @@ section {
 	inset-block-end: var(--padding);
 	inset-inline-start: calc(var(--padding) / 1);
 	margin-inline-end: calc(4 *var(--padding));
-	width: 90%;
+	width: 85%;
 }
 
 .colophon p {
@@ -124,6 +127,11 @@ section {
 	svg {
 		width: 100rem;
 	}
+
+	.colophon {
+		width: 93%;
+	}
+	
 }
 
 @media (width > 700px) {
