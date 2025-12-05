@@ -189,3 +189,11 @@ section {
 		width: 250rem;
 	}
 }
+
+/* Testing image adjustments for mobile only using https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/-webkit-touch-callout */
+@supports (-webkit-touch-callout: none) {
+  body {
+	background-attachment: scroll;
+	background-position: center top; /* adjust if needed */
+	}
+}
