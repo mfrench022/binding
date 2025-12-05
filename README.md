@@ -4,7 +4,9 @@
 
 ### Featuring Selections from the following works:
 My Typographies, Paul Elliman, 1997
+
 Type as Programme, Jürg Lehni, 2009
+
 Thinking with Type, Ellen Lupton, 2010
 
 ### Fonts used included Nunito and Inter:
