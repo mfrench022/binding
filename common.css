@@ -78,6 +78,7 @@ blockquote {
 	overflow-y: hidden;
 	min-height: 12.75rem;
 	mix-blend-mode: color-dodge;
+	backdrop-filter: blur(0.029rem);
 }
 
 blockquote p {
@@ -288,7 +289,7 @@ section > p:first-of-type {
 		position: absolute;
 		font-size: 30rem;
 		inset-block-start: calc(10 * var(--padding));
-		inset-inline-start: calc(1 * var(--padding));
+		inset-inline-start: calc(2.5 * var(--padding));
 		mix-blend-mode: multiply;
 		z-index: 0;
 	}
