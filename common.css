@@ -78,7 +78,7 @@ blockquote {
 	overflow-y: hidden;
 	min-height: 12.75rem;
 	mix-blend-mode: color-dodge;
-	backdrop-filter: blur(0.029rem);
+	backdrop-filter: blur(1rem);
 }
 
 blockquote p {
@@ -255,6 +255,10 @@ section > p:first-of-type {
 
 	.menu {
 	flex-direction: row;
+	}
+
+	blockquote {
+	backdrop-filter: blur(0.029rem);
 	}
 }
 
