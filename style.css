@@ -3,7 +3,7 @@ svg {
 	position: fixed;
 	z-index: 100;
 	inset-block-start: 2rem;
-	inset-block-start: 50%;
+	inset-block-start: 37%;
 	inset-inline-start: 50%;
 	transform:translate(-50%, -50%);
 	width: 75rem;
@@ -145,6 +145,7 @@ section {
 @media (width > 700px) {
 	 svg {
 		width: 120rem;
+		inset-block-start: 45%;
 	}
 
 	header {
