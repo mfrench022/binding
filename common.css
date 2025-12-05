@@ -188,19 +188,6 @@ padding-block-start: calc(var(--padding) * 4);
 	padding-block: 0;
 }
 
-.inline {
-	background-color:  var(--fg-color);
-    mix-blend-mode: exclusion;
-	transition: 300ms ease-in-out;
-	font-weight: 500;
-}
-
-.inline:hover {
-    transition: 300ms ease-in-out;
-    color: var(--fg-color);
-    mix-blend-mode: color-dodge;
-}
-
 .sticky h4 {
 	font-size: 1rem;
 }
@@ -263,16 +250,7 @@ padding-block-start: calc(var(--padding) * 4);
 
 	h4 {
 	font-size: 2.7rem;
-}
-
-.open {
-	position: absolute;
-	font-size: 30rem;
-	inset-block-start: calc(10 * var(--padding));
-	inset-inline-start: calc(1 * var(--padding));
-    mix-blend-mode: darken;
-	z-index: 0;
-}
+	}
 
 .sticky h4 {
 	font-size: 1.3rem;
@@ -302,13 +280,23 @@ article p {
 }
 
 blockquote p {
-	max-width: 43ch;
+	max-width: 65ch;
+	padding-inline-start: 17rem;
 }
 
 h1 {
 	font-size: 4.5rem;
 }
 
+
+.open {
+	position: absolute;
+	font-size: 30rem;
+	inset-block-start: calc(10 * var(--padding));
+	inset-inline-start: calc(1 * var(--padding));
+    mix-blend-mode: multiply;
+	z-index: 0;
+}
 
 }
 

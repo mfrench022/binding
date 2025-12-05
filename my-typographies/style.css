@@ -51,12 +51,19 @@ blockquote em {
         mix-blend-mode: normal;
     }
 
-.inline {
+
+    .inline {
+	transition: 300ms ease-in-out;
+	font-weight: 500;
+    color: var(--fg-color);
     background-color: var(--accent-color);
+    mix-blend-mode: lighten;
 }
 
 .inline:hover {
-    background-color: var(--accent-color);
+    transition: 300ms ease-in-out;
+    color: var(--fg-color);
+    mix-blend-mode: color-dodge;
 }
 
 
