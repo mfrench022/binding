@@ -4,8 +4,6 @@
 :root {
 	--bg-color: black;
 	--fg-color: white;
-	--accent-color: blue;
-	--grey: rgb(59, 58, 58);
 	--padding: 1.5rem;
 	--fontsize: 1rem;
 	--sticky-overlap: 5rem;
@@ -73,25 +71,27 @@ h3 time {
 	font-style: italic;
 }
 
-
 blockquote {
 	padding-inline: calc(var(--padding) / 2);
-	background-color: rgba(255, 255, 255, 0.75);
+	background-color: var(--fg-color);
 	padding-block-start: calc( 2 * var(--padding));
 	position: relative;
 	overflow-y: hidden;
 	min-height: 12.75rem;
+	mix-blend-mode: color-dodge;
 }
 
 blockquote p {
 	color: var(--bg-color);
-	mix-blend-mode: normal;
 	padding-block-end: 0;
 	padding-block-end: calc( 2 * var(--padding));
+	mix-blend-mode: normal;
 }
 
 blockquote a {
 	transition: 300ms ease-in-out;
+	background-color: var(--fg-color);
+	mix-blend-mode: difference;
 }
 
 article em {
@@ -184,8 +184,21 @@ padding-block-start: calc(var(--padding) * 4);
 .formersticky2 {
 	background: #000000;
 	padding-block: calc(var(--padding) / 2);
-	margin-bottom: var(--padding);
+	margin-bottom: calc(var(--padding) *1.25);
 	padding-block: 0;
+}
+
+.inline {
+	background-color:  var(--fg-color);
+    mix-blend-mode: exclusion;
+	transition: 300ms ease-in-out;
+	font-weight: 500;
+}
+
+.inline:hover {
+    transition: 300ms ease-in-out;
+    color: var(--fg-color);
+    mix-blend-mode: color-dodge;
 }
 
 .sticky h4 {
@@ -257,7 +270,7 @@ padding-block-start: calc(var(--padding) * 4);
 	font-size: 30rem;
 	inset-block-start: calc(10 * var(--padding));
 	inset-inline-start: calc(1 * var(--padding));
-    mix-blend-mode: overlay;
+    mix-blend-mode: darken;
 	z-index: 0;
 }
 
