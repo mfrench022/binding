@@ -50,11 +50,11 @@ header em {
 }
 
 .green em {
-	text-shadow: rgb(30, 144, 28) 0.1rem 0 0.5rem;
+	text-shadow: rgb(83, 192, 15) 0.1rem 0 0.5rem;
 }
 
 .green:hover p{
-	text-shadow: rgb(30, 144, 28) 0.2rem 0 0.7rem;
+	text-shadow: rgb(83, 192, 15) 0.2rem 0 0.7rem;
 	transition: 300ms ease-in-out;
 }
 
